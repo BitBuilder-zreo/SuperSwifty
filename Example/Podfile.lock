@@ -1,0 +1,18 @@
+PODS:
+  - SuperSwifty (0.0.1):
+    - SuperSwifty/Encryption (= 0.0.1)
+  - SuperSwifty/Encryption (0.0.1)
+
+DEPENDENCIES:
+  - SuperSwifty (from `../`)
+
+EXTERNAL SOURCES:
+  SuperSwifty:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SuperSwifty: 2439f8a997abe527e606d0e68879b9c7e460760a
+
+PODFILE CHECKSUM: 48eda53cecb20df9de44c2d4f23dec5589c88b18
+
+COCOAPODS: 1.9.3
