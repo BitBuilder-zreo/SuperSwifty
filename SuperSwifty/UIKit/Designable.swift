@@ -27,14 +27,14 @@ public class IBView : UIView {
 
     @IBInspectable var borderColor : UIColor {
 
-           set { layer.borderColor = newValue.cgColor }
+        set { layer.borderColor = newValue.cgColor }
 
-           get {
-               guard let cg = layer.borderColor else { return UIColor.clear }
+        get {
+            guard let cg = layer.borderColor else { return UIColor.clear }
 
-               return UIColor(cgColor: cg)
-           }
-       }
+            return UIColor(cgColor: cg)
+        }
+    }
 
     @IBInspectable var borderWidth : CGFloat {
         set { layer.borderWidth = newValue }
@@ -53,8 +53,12 @@ public class IBView : UIView {
 
     @IBInspectable var shadowColor:UIColor {
         set { layer.shadowColor = newValue.cgColor }
-        get { UIColor(cgColor: layer.shadowColor!) }
+        get {
+            guard let cg = layer.shadowColor else { return .clear }
+            return UIColor(cgColor: cg)
+        }
     }
+
     @IBInspectable var shadowRadius:CGFloat {
         set { layer.shadowRadius = newValue }
         get { layer.shadowRadius }
@@ -80,14 +84,14 @@ public class IBButton:UIButton {
 
     @IBInspectable var borderColor : UIColor {
 
-           set { layer.borderColor = newValue.cgColor }
+        set { layer.borderColor = newValue.cgColor }
 
-           get {
-               guard let cg = layer.borderColor else { return UIColor.clear }
+        get {
+            guard let cg = layer.borderColor else { return UIColor.clear }
 
-               return UIColor(cgColor: cg)
-           }
-       }
+            return UIColor(cgColor: cg)
+        }
+    }
 
     @IBInspectable var borderWidth : CGFloat {
         set { layer.borderWidth = newValue }
@@ -106,8 +110,12 @@ public class IBButton:UIButton {
 
     @IBInspectable var shadowColor:UIColor {
         set { layer.shadowColor = newValue.cgColor }
-        get { UIColor(cgColor: layer.shadowColor!) }
+        get {
+            guard let cg = layer.shadowColor else { return .clear }
+            return UIColor(cgColor: cg)
+        }
     }
+
     @IBInspectable var shadowRadius:CGFloat {
         set { layer.shadowRadius = newValue }
         get { layer.shadowRadius }
@@ -158,7 +166,10 @@ public class IBImageView:UIImageView {
 
     @IBInspectable var shadowColor:UIColor {
         set { layer.shadowColor = newValue.cgColor }
-        get { UIColor(cgColor: layer.shadowColor!) }
+        get {
+            guard let cg = layer.shadowColor else { return .clear }
+            return UIColor(cgColor: cg)
+        }
     }
     @IBInspectable var shadowRadius:CGFloat {
         set { layer.shadowRadius = newValue }
@@ -182,22 +193,22 @@ public class IBLabel:UILabel {
         get { layer.masksToBounds }
     }
 
-     @IBInspectable var borderColor : UIColor {
+    @IBInspectable var borderColor : UIColor {
 
-           set { layer.borderColor = newValue.cgColor }
+        set { layer.borderColor = newValue.cgColor }
 
-           get {
-               guard let cg = layer.borderColor else { return UIColor.clear }
+        get {
+            guard let cg = layer.borderColor else { return UIColor.clear }
 
-               return UIColor(cgColor: cg)
-           }
-       }
+            return UIColor(cgColor: cg)
+        }
+    }
 
     @IBInspectable var borderWidth : CGFloat {
         set { layer.borderWidth = newValue }
         get { layer.borderWidth }
     }
-
+    
     @IBInspectable var shadowOpacity:CGFloat {
         set { layer.shadowOpacity = Float(newValue) }
         get { CGFloat(layer.shadowOpacity) }
