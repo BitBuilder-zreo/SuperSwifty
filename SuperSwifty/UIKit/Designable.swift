@@ -179,18 +179,19 @@ public class IBImageView:UIImageView {
 
 @IBDesignable
 public class IBLabel:UILabel {
+
     @IBInspectable var cornerRadius : CGFloat {
 
         set{ layer.cornerRadius = newValue }
 
-        get{ layer.cornerRadius}
+        get{ return layer.cornerRadius }
     }
 
     @IBInspectable var maskBounds:Bool {
 
         set { layer.masksToBounds = newValue }
 
-        get { layer.masksToBounds }
+        get { return layer.masksToBounds }
     }
 
     @IBInspectable var borderColor : UIColor {
@@ -209,14 +210,6 @@ public class IBLabel:UILabel {
         get { layer.borderWidth }
     }
     
-    @IBInspectable var shadowOpacity:CGFloat {
-        set { layer.shadowOpacity = Float(newValue) }
-        get { CGFloat(layer.shadowOpacity) }
-    }
 
-    @IBInspectable var shadowRadius:CGFloat {
-        set { layer.shadowRadius = newValue }
-        get { layer.shadowRadius }
-    }
 }
 
