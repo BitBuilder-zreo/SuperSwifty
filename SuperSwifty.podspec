@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "SuperSwifty"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "SuperSwifty 基础封装"
   
   spec.homepage     = "https://github.com/BitBuilder-zreo/SuperSwifty"

@@ -1,9 +1,9 @@
 PODS:
-  - SuperSwifty (0.0.1):
-    - SuperSwifty/Encryption (= 0.0.1)
-    - SuperSwifty/UIKit (= 0.0.1)
-  - SuperSwifty/Encryption (0.0.1)
-  - SuperSwifty/UIKit (0.0.1)
+  - SuperSwifty (0.0.2):
+    - SuperSwifty/Encryption (= 0.0.2)
+    - SuperSwifty/UIKit (= 0.0.2)
+  - SuperSwifty/Encryption (0.0.2)
+  - SuperSwifty/UIKit (0.0.2)
 
 DEPENDENCIES:
   - SuperSwifty (from `../`)
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SuperSwifty: 80c09083a501eb2c2371bc2c3bbfa3c726000d7f
+  SuperSwifty: 803d5062f14356e4c5b1c05cddbf33f021a34ceb
 
 PODFILE CHECKSUM: 48eda53cecb20df9de44c2d4f23dec5589c88b18
 

@@ -207,6 +207,7 @@ public class IBLabel:UILabel {
 
     @IBInspectable var borderWidth : CGFloat {
         set { layer.borderWidth = newValue }
+        
         get { layer.borderWidth }
     }
     
