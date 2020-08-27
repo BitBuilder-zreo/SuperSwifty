@@ -27,10 +27,14 @@ public class IBView : UIView {
 
     @IBInspectable var borderColor : UIColor {
 
-        set { layer.borderColor = newValue.cgColor }
+           set { layer.borderColor = newValue.cgColor }
 
-        get { UIColor(cgColor: layer.borderColor!)  }
-    }
+           get {
+               guard let cg = layer.borderColor else { return UIColor.clear }
+
+               return UIColor(cgColor: cg)
+           }
+       }
 
     @IBInspectable var borderWidth : CGFloat {
         set { layer.borderWidth = newValue }
@@ -76,10 +80,14 @@ public class IBButton:UIButton {
 
     @IBInspectable var borderColor : UIColor {
 
-        set { layer.borderColor = newValue.cgColor }
+           set { layer.borderColor = newValue.cgColor }
 
-        get { UIColor(cgColor: layer.borderColor!)  }
-    }
+           get {
+               guard let cg = layer.borderColor else { return UIColor.clear }
+
+               return UIColor(cgColor: cg)
+           }
+       }
 
     @IBInspectable var borderWidth : CGFloat {
         set { layer.borderWidth = newValue }
@@ -126,7 +134,11 @@ public class IBImageView:UIImageView {
 
         set { layer.borderColor = newValue.cgColor }
 
-        get { UIColor(cgColor: layer.borderColor!)  }
+        get {
+            guard let cg = layer.borderColor else { return UIColor.clear }
+
+            return UIColor(cgColor: cg)
+        }
     }
 
     @IBInspectable var borderWidth : CGFloat {
@@ -170,21 +182,20 @@ public class IBLabel:UILabel {
         get { layer.masksToBounds }
     }
 
-    @IBInspectable var borderColor : UIColor {
+     @IBInspectable var borderColor : UIColor {
 
-        set { layer.borderColor = newValue.cgColor }
+           set { layer.borderColor = newValue.cgColor }
 
-        get { UIColor(cgColor: layer.borderColor!)  }
-    }
+           get {
+               guard let cg = layer.borderColor else { return UIColor.clear }
+
+               return UIColor(cgColor: cg)
+           }
+       }
 
     @IBInspectable var borderWidth : CGFloat {
         set { layer.borderWidth = newValue }
         get { layer.borderWidth }
-    }
-
-    @IBInspectable var shadowOffset : CGSize {
-        set { layer.shadowOffset = newValue }
-        get { layer.shadowOffset }
     }
 
     @IBInspectable var shadowOpacity:CGFloat {
@@ -192,10 +203,6 @@ public class IBLabel:UILabel {
         get { CGFloat(layer.shadowOpacity) }
     }
 
-    @IBInspectable var shadowColor:UIColor {
-        set { layer.shadowColor = newValue.cgColor }
-        get { UIColor(cgColor: layer.shadowColor!) }
-    }
     @IBInspectable var shadowRadius:CGFloat {
         set { layer.shadowRadius = newValue }
         get { layer.shadowRadius }
