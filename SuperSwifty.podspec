@@ -23,12 +23,11 @@ Pod::Spec.new do |spec|
   end
   spec.subspec 'UIKit' do |u|
 
-    u.source_files = 'SuperSwifty/UIKit/*.swift'
+    u.source_files = 'SuperSwifty/UIKit/**/*.swift'
   end
 
-  
-  
-  
-  
-  
+  spec.subspec 'Foundation' do |f|
+    f.source_files = 'SuperSwifty/Foundation/*.swift'
+  end
+
 end

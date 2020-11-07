@@ -15,7 +15,7 @@ public class IBView : UIView {
 
         set{ layer.cornerRadius = newValue }
 
-        get{ layer.cornerRadius}
+        get{ layer.cornerRadius }
     }
 
     @IBInspectable var maskBounds:Bool {
@@ -207,7 +207,7 @@ public class IBLabel:UILabel {
 
     @IBInspectable var borderWidth : CGFloat {
         set { layer.borderWidth = newValue }
-        
+
         get { layer.borderWidth }
     }
     
