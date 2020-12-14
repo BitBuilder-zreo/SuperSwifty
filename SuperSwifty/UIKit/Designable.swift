@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-public class IBView : UIView {
+open class IBView : UIView {
 
     @IBInspectable var cornerRadius : CGFloat {
 
@@ -67,7 +67,7 @@ public class IBView : UIView {
 }
 
 @IBDesignable
-public class IBButton:UIButton {
+open class IBButton:UIButton {
     @IBInspectable var cornerRadius : CGFloat {
 
         set{ layer.cornerRadius = newValue }
@@ -123,7 +123,7 @@ public class IBButton:UIButton {
 }
 
 @IBDesignable
-public class IBImageView:UIImageView {
+open class IBImageView:UIImageView {
     @IBInspectable var cornerRadius : CGFloat {
 
         set{ layer.cornerRadius = newValue }
@@ -178,7 +178,7 @@ public class IBImageView:UIImageView {
 }
 
 @IBDesignable
-public class IBLabel:UILabel {
+open class IBLabel:UILabel {
 
     @IBInspectable var cornerRadius : CGFloat {
 
