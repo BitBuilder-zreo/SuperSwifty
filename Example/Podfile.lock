@@ -1,9 +1,11 @@
 PODS:
-  - SuperSwifty (0.0.2):
-    - SuperSwifty/Encryption (= 0.0.2)
-    - SuperSwifty/UIKit (= 0.0.2)
-  - SuperSwifty/Encryption (0.0.2)
-  - SuperSwifty/UIKit (0.0.2)
+  - SuperSwifty (0.0.4):
+    - SuperSwifty/Encryption (= 0.0.4)
+    - SuperSwifty/Foundation (= 0.0.4)
+    - SuperSwifty/UIKit (= 0.0.4)
+  - SuperSwifty/Encryption (0.0.4)
+  - SuperSwifty/Foundation (0.0.4)
+  - SuperSwifty/UIKit (0.0.4)
 
 DEPENDENCIES:
   - SuperSwifty (from `../`)
@@ -13,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SuperSwifty: 803d5062f14356e4c5b1c05cddbf33f021a34ceb
+  SuperSwifty: cbe1dcf8b6d0b9c783039ff137b1bf4e507a12ec
 
-PODFILE CHECKSUM: 48eda53cecb20df9de44c2d4f23dec5589c88b18
+PODFILE CHECKSUM: 02955d9770e614ac0ea8a517dcfec6c813edb21a
 
 COCOAPODS: 1.9.3
