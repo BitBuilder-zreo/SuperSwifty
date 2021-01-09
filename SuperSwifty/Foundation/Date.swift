@@ -69,6 +69,12 @@ extension DateWrapper where Base == Int {
         return formatter.string(from: date)
     }
 
+    public func secondsToHoursMinutesSeconds()  -> String {
+
+        return String(format: "%02d:%02d:%02d", base / 3600,(base % 3600) / 60,(base % 3600) % 60)
+    }
+
+
 }
 
 
