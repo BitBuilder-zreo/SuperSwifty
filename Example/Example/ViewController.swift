@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        let date = 1201111.date.secondsToHoursMinutesSeconds()
+        let date = 110.date.secondsToHoursMinutesSeconds()
 
         print(date)
 
